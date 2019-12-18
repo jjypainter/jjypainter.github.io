@@ -5,12 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        h1{
+            color:red;
+            background-color:green;
+        }
+        p{
+            color:white;
+            background-color:black;
+        }
+        .big{
+            font-size:20px;
+
+        }
+        #reality{
+            font-size:10px;
+            color:red;
+        }
+    </style>
 </head>
 <body>
     <h1>저는 박지영입니다. 그냥 써봤어요.</h1>
     <h2>이것은 부제목. </h2>
-    <p>
+    <p class='big'>
         저는 화성에 삽니다. 집에서 가까운 회사로 취직되고 싶어요.
     </p>
+    <p id="reality">근데 저희동네에는 등대가 세개나 있어요</p>
+    <div class='big'>근데 솔직히 말해, 어디서나 야근이나 밤샘은 하잫아요?워라벨 글렀어</div>
+    <button id="btn">알림창 표시</button>
+    <script>
+        const btn=document.querySelector('#btn');
+        btn.addEventListener('click',function(){
+            alert('나를 누른게 너냐');
+        })
+    </script>
+
 </body>
 </html>
